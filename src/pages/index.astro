@@ -36,7 +36,7 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
       />
 
       <div class='flex flex-col items-center gap-y-4'>
-        <h1 class='text-3xl font-bold'>{config.author}</h1>
+        <h1 class='text-3xl font-bold'>Hi, I am {config.title}</h1>
         <div class='flex flex-wrap justify-center gap-x-7 gap-y-3'>
           <Label title='Full-Stack Flutter Developer' as='a' target='_blank' />
         </div>
@@ -142,55 +142,74 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
       } -->
 
       {
-        /* <Section title='Experience'>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      >
-        <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
-
-            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-          </li>
-        </ul>
-      </Card>
-      <Card
-        heading='Lorem Ipsum'
-        subheading='Sit amet consectetur'
-        date='Dec 2022 - Nov 2023'
-        imagePath='/src/assets/about-astro.png'
-        altText='Lorem, ipsum dolor sit'
-        imageClass='h-12 w-auto md:-start-16'
-      />
-    </Section> */
+        (
+          <Section title='Experience'>
+            <Card
+              heading='Appstree, Sargodha'
+              subheading='Flutter developer'
+              date='June 2024 - Present'
+              imagePath='/src/assets/about-astro.png'
+              altText='Lorem, ipsum dolor sit'
+              imageClass='h-12 w-auto md:-start-16'
+            >
+              <ul class='ms-4 list-disc text-muted-foreground'>
+                <li>
+                  Built and maintained scalable, high-performance mobile applications using Flutter,
+                  with a focus on MVVM architecture, responsive UI, and seamless user experiences
+                  across Android and iOS.
+                  <li>
+                    Implemented state management solutions like Riverpod and integrated Firebase
+                    services (Auth, Firestore, Cloud Messaging) to enable real-time features and
+                    cloud functionality.
+                  </li>
+                  <li>
+                    Collaborated closely with designers and other Flutter developers, contributing
+                    to app architecture, feature planning, and end-to-end delivery.
+                  </li>
+                </li>
+              </ul>
+            </Card>
+            <Card
+              heading='CodeSquare, Sargodha'
+              subheading='Android developer Intern'
+              date='Nov 2023 - March 2024'
+              imagePath='/src/assets/about-astro.png'
+              altText='Lorem, ipsum dolor sit'
+              imageClass='h-12 w-auto md:-start-16'
+            >
+              <ul class='ms-4 list-disc text-muted-foreground'>
+                <li>
+                  Assisted in developing and testing new features for Android applications under the
+                  guidance of senior developers
+                  <li>
+                    Created a variety of small-scale apps for hands-on practice and skill
+                    development.
+                  </li>
+                  <li>
+                    Designed and developed a real-time chat application for lawyers and clients
+                    using Android (Java/Kotlin), ensuring secure and efficient communication
+                  </li>
+                </li>
+              </ul>
+            </Card>
+          </Section>
+        )
       }
       <Section title='Education'>
-        <Card
-          as='a'
-          heading='Lorem ipsum'
-          subheading='Lorem ipsum dolor sit amet, vidit suscipit at mei.'
-          date='August 2021 - July 2025'
-          href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-        >
+        <Card as='a' heading='University Of Sargodha' date='June 2020 - July 2024'>
           {
             /* <ul class='ms-4 list-disc text-muted-foreground'>
-          <li>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
-            molestiae laboriosam pariatur!
-          </li>
-          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
-        </ul> */
+            <li>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore debitis recusandae, ut
+              molestiae laboriosam pariatur!
+            </li>
+            <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, pariatur!</li>
+          </ul> */
           }
         </Card>
       </Section>
 
-      <Section title='Website List'>
+      <!-- <Section title='Website List'>
         <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
           <ProjectCard
             href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
@@ -217,9 +236,9 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
             imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
           />
         </div>
-      </Section>
+      </Section> -->
 
-      <Section title='Certifications'>
+      <!-- <Section title='Certifications'>
         <Card
           as='a'
           heading='Lorem ipsum'
@@ -227,8 +246,8 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
           date='July 2024'
           href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
         />
-      </Section>
+      </Section> -->
     </div>
-    <Quote class='mt-12' />
+    <!-- <Quote class='mt-12' /> -->
   </main>
 </PageLayout>

@@ -5,7 +5,7 @@ export const theme: ThemeUserConfig = {
   /** Title for your website. Will be used in metadata and as browser tab title. */
   title: 'Mohammad Qasim',
   /** Will be used in index page & copyright declaration */
-  author: 'Hi, I am Mohammad Qasim', 
+  author: 'Mohammad Qasim', 
   /** Description metadata for your website. Can be used in page metadata. */
   description: 'Stay hungry, stay foolish',
   /** The default favicon for your site which should be a path to an image in the `public/` directory. */
@@ -59,36 +59,16 @@ export const theme: ThemeUserConfig = {
   footer: {
     links: [
       // Registration link
-      {
-        title: 'Moe ICP APTX4869',
-        link: 'https://icp.gov.moe/?keyword=APTX4869',
-        style: 'text-sm' // Uno/TW CSS class
-      },
-      {
-        title: 'Travelling',
-        link: 'https://www.travellings.cn/go.html',
-        style: 'text-sm'
-      },
-      // Privacy Policy link
-      {
-        title: 'Site Policy',
-        link: '/terms/list',
-        pos: 2 // position set to 2 will be appended to copyright line
-      }
+     
     ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */
-    credits: true,
+    credits: false,
     /** Optional details about the social media accounts for this site. */
-    social: { github: 'https://github.com/cworld1/astro-theme-pure' }
+    
   },
 
   content: {
-    externalLinksContent: ' ↗',
-    /** Blog page size for pagination (optional) */
-    blogPageSize: 8,
-    externalLinkArrow: true, // show external link arrow
-    // Currently support weibo, x, bluesky
-    share: ['weibo', 'x', 'bluesky']
+  
   }
 }
 
