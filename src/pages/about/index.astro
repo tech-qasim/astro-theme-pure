@@ -14,113 +14,131 @@ const headings = [
 ]
 ---
 
-<PageLayout title='About'  info='/about'>
-  <p>Developer / Designer</p>
+<PageLayout title='About me' info='/about'>
+  <p>Hi, I am a Full-Stack Flutter developer 👩‍💻📱</p>
   <p>
-    Lorem ipsum dolor sit amet, vidit suscipit at mei. Quem denique mea id. Usu ei regione indoctum
-    dissentiunt, cu meliore fuisset mei, vel quod voluptua ne. Ex dicat impedit mel, at eum oratio
-    possit voluptatum.
+    I am a Flutter developer with one year of hands-on experience in building cross-platform mobile
+    applications. Over the past year, I’ve worked on creating responsive, scalable, and
+    user-friendly apps using Flutter and Dart. I have a solid understanding of state management
+    techniques like Provider and Riverpod, API integration, Firebase services, and UI/UX best
+    practices. I’m passionate about writing clean, maintainable code and continuously improving my
+    skills to build high-quality mobile solutions.
   </p>
-  <p>My motto: Stay hungry, Stay foolish. <Spoiler>这里可以夹私货</Spoiler></p>
-  <Button title='Sponsor Me' class='w-fit' href='/projects#sponsorship' style='ahead' />
+
+  <Button title='Email me' class='w-fit' href='mailto:devqasim@gmail.com' style='ahead' />
 
   {/* general-talk */}
-  <h2 id='hobbies'>Hobbies</h2>
+  <h2 id='hobbies'>Some facts about me</h2>
   <ul>
-    <li>Lorem ipsum dolor sit amet, vidit suscipit at mei.</li>
     <li>
-      Quem denique mea id. Usu ei regione indoctum dissentiunt, cu meliore fuisset mei, vel quod
-      voluptua ne.
+      🎮 <strong>Tekken Enthusiast</strong> – Competitive player with <strong>Nina Williams</strong>
+      as my main character. I enjoy mastering her combos and strategies.
     </li>
-    <li>Ex dicat impedit mel, at eum oratio possit voluptatum.</li>
-    <li>Impetus fuisset ullamcorper pri cu, his posse iisque ad, aliquam honestatis usu id.</li>
+    <li>
+      🎬 <strong>Cinephile</strong> – I watch a lot of movies in my free time. Some of my favourite movies are:
+      <ul>
+        <li><em>Requiem for a Dream</em></li>
+        <li><em>A Silent Voice</em></li>
+        <li><em>Before Sunrise</em></li>
+        <li><em>The Shawshank Redemption</em></li>
+      </ul>
+    </li>
+    <li>
+      🎧 <strong>Music Lover</strong> – I listen to music during my coding sessions to help me stay calm while fixing bugs. My favorite artists are <strong>The Weeknd, Young Stunners and BTS</strong>.
+    </li>
   </ul>
 
   {/* tools */}
-  <h2 id='tools'>Tools</h2>
-  <p>Current support tools as follow:</p>
+  <h2 id='tools'>My Tech Stack</h2>
   <ToolSection
     class='mb-5'
-    title='Design'
+    title='Frameworks'
     tools={[
       {
-        name: 'Photoshop',
-        description: 'Picture Editing',
+        name: 'Flutter',
+        description: '',
         href: 'https://www.adobe.com/products/photoshop',
-        icon: import('@/assets/tools/photoshop.svg?raw')
+        icon: import('@/assets/tools/flutter.svg?raw')
       },
       {
-        name: 'Illustrator',
-        description: 'Vector Drawing',
+        name: 'Native Android',
+        description: '',
         href: 'https://www.adobe.com/products/illustrator',
-        icon: import('@/assets/tools/illustrator.svg?raw')
+        icon: import('@/assets/tools/android.svg?raw')
       },
       {
-        name: 'After Effects',
-        description: 'Motion Graphics',
+        name: 'Node JS',
+        description: '',
         href: 'https://www.adobe.com/products/aftereffects',
-        icon: import('@/assets/tools/aftereffects.svg?raw')
+        icon: import('@/assets/tools/nodejs.svg?raw')
       },
-      {
-        name: 'Premiere Pro',
-        description: 'Video Editing',
-        href: 'https://www.adobe.com/products/premiere',
-        icon: import('@/assets/tools/premiere.svg?raw')
-      }
+     
     ]}
   />
   <ToolSection
     class='mb-5'
-    title='Productivity'
+    title='Databases'
     tools={[
       {
-        name: 'Chrome',
-        description: 'Browser',
+        name: 'Firebase',
+        description: '',
         href: 'https://www.google.com/chrome/',
-        icon: import('@/assets/tools/chrome.svg?raw')
+        icon: import('@/assets/tools/firebase.svg?raw')
       },
       {
-        name: 'Firefox',
-        description: 'Browser',
+        name: 'MongoDB',
+        description: '',
         href: 'https://www.mozilla.org/en-US/firefox',
-        icon: import('@/assets/tools/firefox.svg?raw')
+        icon: import('@/assets/tools/mongodb.svg?raw')
       },
       {
-        name: 'Notion',
-        description: 'Note Taking',
+        name: 'SQLite',
+        description: '',
         href: 'https://www.notion.so/',
-        icon: import('@/assets/tools/notion.svg?raw')
+        icon: import('@/assets/tools/sqlite.svg?raw')
       },
       {
-        name: 'Typora',
-        description: 'Markdown Editor',
+        name: 'Drift',
+        description: '',
         href: 'https://typora.io/',
-        icon: import('@/assets/tools/typora.svg?raw')
+        icon: import('@/assets/tools/drift.svg?raw')
       }
     ]}
   />
   <ToolSection
     class='mb-5'
-    title='Development'
+    title='Tools'
     tools={[
       {
         name: 'VS Code',
-        description: 'IDE',
+        description: '',
         href: 'https://code.visualstudio.com/',
         icon: import('@/assets/tools/vscode.svg?raw')
       },
       {
-        name: 'Neovim',
-        description: 'IDE',
+        name: 'Android Studio',
+        description: '',
         href: 'https://neovim.io/',
-        icon: import('@/assets/tools/neovim.svg?raw')
+        icon: import('@/assets/tools/androidstudio.svg?raw')
       },
       {
-        name: 'Sublime Text',
-        description: 'IDE',
+        name: 'Git',
+        description: '',
         href: 'https://www.sublimetext.com/',
-        icon: import('@/assets/tools/sublime.svg?raw')
-      }
+        icon: import('@/assets/tools/git.svg?raw')
+      },
+      {
+        name: 'Postman',
+        description: '',
+        href: 'https://www.sublimetext.com/',
+        icon: import('@/assets/tools/postman.svg?raw')
+      },
+      {
+        name: 'FVM',
+        description: '',
+        href: 'https://www.sublimetext.com/',
+        icon: import('@/assets/tools/flutter.svg?raw')
+      },
     ]}
   />
   <ToolSection
@@ -128,26 +146,14 @@ const headings = [
     title='Environment'
     tools={[
       {
-        name: 'Arch Linux',
-        description: 'Linux Distribution',
-        href: 'https://archlinux.org/',
-        icon: import('@/assets/tools/archlinux.svg?raw')
-      },
-      {
-        name: 'Ubuntu 24.04 LTS',
-        description: 'Linux Distribution',
-        href: 'https://ubuntu.com/',
-        icon: import('@/assets/tools/ubuntu.svg?raw')
-      },
-      {
-        name: 'MacOS Sonoma',
-        description: 'MacBook Air',
+        name: 'MacOS',
+        description: '',
         href: 'https://www.apple.com/macos/',
         icon: import('@/assets/tools/apple.svg?raw')
       },
       {
-        name: 'Windows 11',
-        description: 'Rog Strix G15',
+        name: 'Windows 10',
+        description: '',
         href: 'https://news.microsoft.com/windows11-general-availability/',
         icon: import('@/assets/tools/windows11.svg?raw')
       }
