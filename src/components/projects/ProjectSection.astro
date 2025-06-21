@@ -3,7 +3,7 @@ import type { ImageMetadata } from 'astro'
 import { Image } from 'astro:assets'
 
 import type { iconsType } from 'astro-pure/types'
-import { Icon } from 'astro-pure/user'
+import { Button, Icon } from 'astro-pure/user'
 import { cn } from 'astro-pure/utils'
 
 interface Props {
@@ -22,12 +22,13 @@ const { class: className, project, ...props } = Astro.props
 const images = import.meta.glob<{ default: ImageMetadata }>(
   '/src/assets/projects/*.{jpeg,jpg,png,gif}'
 )
-const projectIconSet: Record<string, iconsType> = {
-  github: 'github-circle',
-  site: 'earth',
-  doc: 'document',
-  release: 'package'
-}
+// const projectIconSet: Record<string, iconsType> = {
+//   github: 'github-circle',
+//   site: 'playstore',
+//   playstore: 'playstore',
+//   doc: 'document',
+//   release: 'github-circle'
+// }
 ---
 
 <div class={className} {...props}>
@@ -79,15 +80,10 @@ const projectIconSet: Record<string, iconsType> = {
               </div>
               <div class='flex flex-row items-center gap-x-2 sm:gap-x-3'>
                 {project.links.map((link) => {
-                  const icon = projectIconSet[link.type]
+                  // const icon = projectIconSet[link.type]
                   return (
-                    <a
-                      href={link.href}
-                      class='rounded-full bg-muted p-1 text-muted-foreground transition-colors sm:p-1.5'
-                      aria-label={link.type}
-                      target='_blank'
-                    >
-                      <Icon class='size-5' name={icon} />
+                    <a href={link.href}>
+                      <Button as='button' title={link.type} style='pill' />
                     </a>
                   )
                 })}
