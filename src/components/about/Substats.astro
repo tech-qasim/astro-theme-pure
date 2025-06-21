@@ -50,24 +50,17 @@ await Promise.all(stats.map(fetchCount))
           <div class='flex-1 text-foreground transition-colors group-hover:text-primary'>
             {platform}
           </div>
-          {count ? (
+          {/* {count ? (
             <div class='flex items-center gap-1.5'>
-              <samp>{count}</samp>
+              <samp>{}</samp>
               <span class='text-sm font-normal'>{text}</span>
             </div>
           ) : (
             'null'
-          )}
+          )} */}
         </div>
       </a>
     ))
   }
 </div>
-<div class='mt-2 text-right text-sm'>
-  Display real-time; powered by <a
-    class='text-muted-foreground'
-    href='http://github.com/spencerwooo/substats'
-    target='_blank'
-    rel='noopener noreferrer'>Substats</a
-  >
-</div>
+
