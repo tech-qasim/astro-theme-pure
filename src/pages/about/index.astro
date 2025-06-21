@@ -14,8 +14,8 @@ const headings = [
 ]
 ---
 
-<PageLayout title='About me' info='/about'>
-  <p>Hi, I am a Full-Stack Flutter developer 👩‍💻📱</p>
+<PageLayout title='About me'>
+  <p>Hi, I am Mohammad Qasim 👩‍💻📱</p>
   <p>
     I am a Flutter developer with one year of hands-on experience in building cross-platform mobile
     applications. Over the past year, I’ve worked on creating responsive, scalable, and
@@ -35,7 +35,8 @@ const headings = [
       as my main character. I enjoy mastering her combos and strategies.
     </li>
     <li>
-      🎬 <strong>Cinephile</strong> – I watch a lot of movies in my free time. Some of my favourite movies are:
+      🎬 <strong>Cinephile</strong> – I watch a lot of movies in my free time. Some of my favourite movies
+      are:
       <ul>
         <li><em>Requiem for a Dream</em></li>
         <li><em>A Silent Voice</em></li>
@@ -44,7 +45,9 @@ const headings = [
       </ul>
     </li>
     <li>
-      🎧 <strong>Music Lover</strong> – I listen to music during my coding sessions to help me stay calm while fixing bugs. My favorite artists are <strong>The Weeknd, Young Stunners and BTS</strong>.
+      🎧 <strong>Music Lover</strong> – I listen to music during my coding sessions to help me stay calm
+      while fixing bugs. My favorite artists are <strong>The Weeknd, Young Stunners and BTS</strong
+      >.
     </li>
   </ul>
 
@@ -71,8 +74,7 @@ const headings = [
         description: '',
         href: 'https://www.adobe.com/products/aftereffects',
         icon: import('@/assets/tools/nodejs.svg?raw')
-      },
-     
+      }
     ]}
   />
   <ToolSection
@@ -138,7 +140,55 @@ const headings = [
         description: '',
         href: 'https://www.sublimetext.com/',
         icon: import('@/assets/tools/flutter.svg?raw')
+      }
+    ]}
+  />
+  <ToolSection
+    class='mb-5'
+    title='State Management'
+    tools={[
+      {
+        name: 'Riverpod',
+        description: '',
+        href: 'https://code.visualstudio.com/',
+        icon: import('@/assets/tools/flutter.svg?raw')
       },
+      {
+        name: 'Bloc',
+        description: '',
+        href: 'https://neovim.io/',
+        icon: import('@/assets/tools/flutter.svg?raw')
+      },
+      {
+        name: 'GetX',
+        description: '',
+        href: 'https://www.sublimetext.com/',
+        icon: import('@/assets/tools/flutter.svg?raw')
+      }
+    ]}
+  />
+  <ToolSection
+    class='mb-5'
+    title='Networking & API'
+    tools={[
+      {
+        name: 'Express JS',
+        description: '',
+        href: 'https://code.visualstudio.com/',
+        icon: import('@/assets/tools/expressjs.svg?raw')
+      },
+      {
+        name: 'http',
+        description: '',
+        href: 'https://neovim.io/',
+        icon: import('@/assets/tools/http.svg?raw')
+      },
+      {
+        name: 'dio',
+        description: '',
+        href: 'https://www.sublimetext.com/',
+        icon: import('@/assets/tools/flutter.svg?raw')
+      }
     ]}
   />
   <ToolSection
@@ -162,24 +212,32 @@ const headings = [
 
   {/* social-networks */}
   <h2 id='social-networks'>My Social Media Accounts</h2>
- 
+
   <Substats
     stats={[
       {
         platform: 'GitHub',
-        icon: 'github',
+        icon: import('@/assets/tools/github.svg?raw'),
         link: 'https://github.com/tech-qasim',
         text: '',
         api: 'github/cworld1'
       },
       {
+        platform: 'Linkedin',
+        icon: import('@/assets/tools/linkedin.svg?raw'),
+        color: '#2ca5e0',
+        link: 'https://www.linkedin.com/in/qasimxo/',
+        text: 'subscribers',
+        api: 'telegram/cworld0_cn'
+      },
+      {
         platform: 'devmohdqasim@gmail.com',
-        icon: 'email',
+        icon: import('@/assets/tools/email.svg?raw'),
         color: '#2ca5e0',
         link: 'https://t.me/cworld0_cn',
         text: 'subscribers',
         api: 'telegram/cworld0_cn'
-      },
+      }
     ]}
   />
 
@@ -231,7 +289,7 @@ const headings = [
       CI/CD: <a href='https://vercel.com/workflow' target='_blank'>Vercel Workflow</a>
     </li>
      <li>Resources speedup: <a href='https://cdn.cbd.int/' target='_blank'>CBD CDN</a></li> -->
-    <!-- <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
+  <!-- <li>Comment system: <a href='https://waline.js.org' target='_blank'>Waline</a></li>
     <li>
       Visits: <a href='https://supabase.com/' target='_blank'>Supabase</a> +
       <a href='https://waline.js.org/' target='_blank'>Waline</a>
@@ -242,5 +300,5 @@ const headings = [
       >
     </li>
   </ul>
-  <Comment slot='bottom' /> --> 
+  <Comment slot='bottom' /> -->
 </PageLayout>

@@ -11,12 +11,12 @@ import Section from '@/components/home/Section.astro'
 import SkillLayout from '@/components/home/SkillLayout.astro'
 import avatar from '@/assets/avatar.png'
 import profilePic from '@/assets/pfpgreen.png'
-import resume from "@/assets/resume.pdf"
+import resume from '@/assets/resume.pdf'
 import config from '@/site-config'
 
 const languages = ['Java', 'Kotlin', 'Dart', 'Javascript']
 const frameworks = ['Flutter', 'Android SDK', 'Node JS']
-const stateManagement = ['Riverpod', 'Bloc']
+const stateManagement = ['Riverpod', 'Bloc', 'GetX']
 const networking = ['http', 'dio', 'Express JS', 'AI Integration']
 const databases = ['SQLite', 'drift', 'Firebase', 'MongoDB']
 const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
@@ -91,11 +91,11 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
         </a>
       </div>
 
-     
       <a
         href={resume}
         target='_blank'
-        class='flex flex-row items-center gap-x-3 rounded-full border bg-background px-4 py-2 text-sm shadow-sm transition-shadow hover:shadow-md' download
+        class='flex flex-row items-center gap-x-3 rounded-full border bg-background px-4 py-2 text-sm shadow-sm transition-shadow hover:shadow-md'
+        download
       >
         <span class='relative flex items-center justify-center'>
           <span
@@ -103,19 +103,16 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
           ></span>
           <span class='size-2 rounded-full bg-green-400'></span>
         </span>
-        <p class='font-medium text-muted-foreground' >Download Resume</p>
+        <p class='font-medium text-muted-foreground'>Download Resume</p>
       </a>
     </section>
 
     <div id='content' class='animate flex flex-col gap-y-10 md:w-4/5 lg:w-5/6'>
       <Section title='About'>
         <p class='text-muted-foreground'>
-          I am a Flutter developer with one year of hands-on experience in building cross-platform
-          mobile applications. Over the past year, I’ve worked on creating responsive, scalable, and
-          user-friendly apps using Flutter and Dart. I have a solid understanding of state
-          management techniques like Provider and Riverpod, API integration, Firebase services, and
-          UI/UX best practices. I’m passionate about writing clean, maintainable code and
-          continuously improving my skills to build high-quality mobile solutions.
+          I am a Flutter developer with 1 year of experience building responsive, scalable apps using Dart,
+          Provider, Riverpod, and Firebase. I am passionate about clean code, intuitive UI/UX, and
+          delivering high-quality mobile solutions.
         </p>
         <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
       </Section>

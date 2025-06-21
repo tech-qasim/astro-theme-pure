@@ -1,10 +1,13 @@
 ---
+import { Image } from 'astro:assets'
+
 import { socialLinks, type iconsType } from 'astro-pure/types'
-import { Icon } from 'astro-pure/user'
+import { Icon, Svg } from 'astro-pure/user'
+import { cn } from 'astro-pure/utils'
 
 interface SubstatsItem {
   platform: string
-  icon: (typeof socialLinks)[number]
+  icon: Promise<typeof import('*.svg?raw')> | ImageMetadata
   color?: string
   link?: string
   text: string
@@ -34,11 +37,15 @@ async function fetchCount(item: SubstatsItem) {
 }
 
 await Promise.all(stats.map(fetchCount))
+
+function isImageMetadata(obj: any): obj is ImageMetadata {
+  return obj && typeof obj === 'object' && 'src' in obj
+}
 ---
 
 <div class='grid grid-cols-1 gap-3 rounded-xl border p-2 sm:grid-cols-2 sm:p-3'>
   {
-    stats.map(({ link, platform, icon, color, count, text }) => (
+    stats.map(({ link, platform, icon, color }) => (
       <a
         class='group text-muted-foreground no-underline'
         href={link}
@@ -46,7 +53,20 @@ await Promise.all(stats.map(fetchCount))
         rel='noopener noreferrer'
       >
         <div class='flex items-center gap-3 rounded-lg border border-transparent px-3 py-2 transition-all hover:border-border hover:bg-muted'>
-          {icon && <Icon name={icon as iconsType} color={color} />}
+          {
+            <>
+              {isImageMetadata(icon) ? (
+                <div class='size-10 rounded-lg bg-primary-foreground p-2'>
+                  <Image src={icon} alt={platform} class='h-full w-full object-contain' />
+                </div>
+              ) : (
+                <Svg
+                  src={icon}
+                  class='size-10 rounded-lg bg-primary-foreground fill-foreground p-2'
+                />
+              )}
+            </>
+          }
           <div class='flex-1 text-foreground transition-colors group-hover:text-primary'>
             {platform}
           </div>
@@ -63,4 +83,3 @@ await Promise.all(stats.map(fetchCount))
     ))
   }
 </div>
-
