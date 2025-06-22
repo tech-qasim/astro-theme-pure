@@ -57,6 +57,7 @@ export const theme: ThemeUserConfig = {
   footer: {
     links: [
       // Registration link
+      
      
     ],
     /** Enable displaying a “Astro & Pure theme powered” link in your site’s footer. */

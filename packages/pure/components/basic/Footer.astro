@@ -23,20 +23,7 @@ const footerLink1 = footerConf.links?.filter(({ pos }) => pos === 1) || []
         class='flex items-center gap-x-4 gap-y-2 text-muted-foreground max-sm:flex-col [&_a]:text-foreground'
       >
         {/* Position 1 */}
-        {
-          footerLink1.length > 0 && (
-            <div>
-              {footerLink1.map(({ title, link, style }, index) => (
-                <span>
-                  <a href={link} target='_blank' class={style}>
-                    {title}
-                  </a>
-                  {index < footerLink1.length - 1 && ' • '}
-                </span>
-              ))}
-            </div>
-          )
-        }
+
         {/* Position 2 */}
         <div>
           © {year}
@@ -44,7 +31,6 @@ const footerLink1 = footerConf.links?.filter(({ pos }) => pos === 1) || []
           {
             footerConf.links && footerConf.links.length > 0 && (
               <>
-                &
                 <span>
                   {footerConf.links
                     .filter(({ pos }) => pos === 2)
@@ -77,7 +63,21 @@ const footerLink1 = footerConf.links?.filter(({ pos }) => pos === 1) || []
       </div>
 
       {/* Social Brands */}
-      <div class='flex items-center gap-x-4'>
+      {
+        footerLink1.length > 0 && (
+          <div>
+            {footerLink1.map(({ title, link, style }, index) => (
+              <span>
+                <a href={link} target='_blank' class={style}>
+                  {title}
+                </a>
+                {index < footerLink1.length - 1 && ' • '}
+              </span>
+            ))}
+          </div>
+        )
+      }
+      <!-- <div class='flex items-center gap-x-4'>
         {
           footerConf.social &&
             Object.entries(footerConf.social).map(([platform, { label, url }]) => (
@@ -89,8 +89,7 @@ const footerLink1 = footerConf.links?.filter(({ pos }) => pos === 1) || []
                 <Icon name={platform as keyof typeof footerConf.social} />
               </a>
             ))
-        }
-      </div>
+        } -->
     </div>
   </div>
 </footer>
