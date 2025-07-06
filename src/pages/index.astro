@@ -20,6 +20,7 @@ const stateManagement = ['Riverpod', 'Bloc', 'GetX']
 const networking = ['http', 'dio', 'Express JS', 'AI Integration']
 const databases = ['SQLite', 'drift', 'Firebase', 'MongoDB']
 const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
+const aiTools  = ['ChatGPT', 'Github Copilot', 'Claude']
 
 // const MAX_POSTS = 10
 // const allPosts = await getBlogCollection()
@@ -153,7 +154,7 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
       <Section title='About'>
         <p class='text-muted-foreground'>
           I am a mobile developer with 1 year of experience building responsive, scalable apps using
-          native Android, dart, Java/Kotlin, Provider, Riverpod, and Firebase. I am passionate about
+          Flutter and Native Android. I am passionate about
           clean code, intuitive UI/UX, and delivering high-quality mobile solutions.
         </p>
         <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
@@ -165,8 +166,12 @@ const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
         <SkillLayout title='State Management' skills={stateManagement} />
         <SkillLayout title='Networking & API' skills={networking} />
         <SkillLayout title='Databases' skills={databases} />
-        <SkillLayout title='Tools' skills={tools} />
+        <SkillLayout title='Dev tools' skills={tools} />
+        <SkillLayout title='AI tools' skills={aiTools} />
       </Section>
+
+
+     
 
       <!-- {
         allPostsByDate.length > 0 && (
