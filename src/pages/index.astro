@@ -20,7 +20,7 @@ const stateManagement = ['Riverpod', 'Bloc', 'GetX']
 const networking = ['http', 'dio', 'Express JS', 'AI Integration']
 const databases = ['SQLite', 'drift', 'Firebase', 'MongoDB']
 const tools = ['VS Code', 'Postman', 'Git', 'Android Studio', 'FVM']
-const aiTools  = ['ChatGPT', 'Github Copilot', 'Claude']
+const aiTools = ['ChatGPT', 'Github Copilot', 'Claude']
 
 // const MAX_POSTS = 10
 // const allPosts = await getBlogCollection()
@@ -154,8 +154,8 @@ const aiTools  = ['ChatGPT', 'Github Copilot', 'Claude']
       <Section title='About'>
         <p class='text-muted-foreground'>
           I am a mobile developer with 1 year of experience building responsive, scalable apps using
-          Flutter and Native Android. I am passionate about
-          clean code, intuitive UI/UX, and delivering high-quality mobile solutions.
+          Flutter and Native Android. I am passionate about clean code, intuitive UI/UX, and
+          delivering high-quality mobile solutions.
         </p>
         <Button title='More about me' class='w-fit self-end' href='/about' style='ahead' />
       </Section>
@@ -169,9 +169,6 @@ const aiTools  = ['ChatGPT', 'Github Copilot', 'Claude']
         <SkillLayout title='Dev tools' skills={tools} />
         <SkillLayout title='AI tools' skills={aiTools} />
       </Section>
-
-
-     
 
       <!-- {
         allPostsByDate.length > 0 && (
@@ -242,6 +239,35 @@ const aiTools  = ['ChatGPT', 'Github Copilot', 'Claude']
           </Section>
         )
       }
+
+      <Section title='My Projects'>
+        <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
+          <ProjectCard
+            href='https://play.google.com/store/apps/details?id=app.habitbee.ai.powered.daily.habit.tracker&hl=en'
+            heading='AI Habit Tracking App - Habit Bee'
+            subheading='Tech Stack: Flutter, Firebase, Riverpod'
+            imagePath='/src/assets/projects/habitbee.jpg'
+          />
+          <ProjectCard
+            href='https://play.google.com/store/apps/details?id=app.hairproduct.scanner&hl=en'
+            heading='AI Hair Products Scanner App'
+            subheading='Tech Stack: Flutter, Drift, Riverpod'
+            imagePath='/src/assets/projects/hairscanner.png'
+          />
+          <ProjectCard
+            href='https://play.google.com/store/apps/details?id=com.ertugrul&hl=en'
+            heading='Noti'
+            subheading='Tech Stack: Flutter, Firebase, Riverpod'
+            imagePath='/src/assets/projects/noti.jpg'
+          />
+          <ProjectCard
+            href='/projects'
+            heading='More projects'
+            subheading='Check out more projects'
+            imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
+          />
+        </div>
+      </Section>
       <Section title='Education'>
         <Card as='a' heading='University Of Sargodha' date='June 2020 - July 2024'>
           {
@@ -255,35 +281,6 @@ const aiTools  = ['ChatGPT', 'Github Copilot', 'Claude']
           }
         </Card>
       </Section>
-
-      <!-- <Section title='Website List'>
-        <div class='grid grid-cols-1 gap-3 sm:grid-cols-2'>
-          <ProjectCard
-            href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            heading='Lorem ipsum'
-            subheading='dolor sit amet, oratio ornatus explicari pro ex'
-            imagePath='/src/assets/projects/alex-tyson-2BAXJ7ha74s-unsplash.jpg'
-          />
-          <ProjectCard
-            href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            heading='Lorem ipsum'
-            subheading='dolor sit amet, oratio ornatus explicari pro ex'
-            imagePath='/src/assets/projects/angelica-teran-Bk9hpaXHK4o-unsplash.jpg'
-          />
-          <ProjectCard
-            href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'
-            heading='Lorem ipsum'
-            subheading='dolor sit amet, oratio ornatus explicari pro ex'
-            imagePath='/src/assets/projects/kseniia-zapiatkina-yATU3rg8tNI-unsplash.jpg'
-          />
-          <ProjectCard
-            href='/projects'
-            heading='More projects'
-            subheading='Check out more projects'
-            imagePath='/src/assets/projects/wen-qiao-g_w8I64FiO0-unsplash.jpg'
-          />
-        </div>
-      </Section> -->
 
       <!-- <Section title='Certifications'>
         <Card
